@@ -70,13 +70,14 @@
   "referenceUrls": [
     "https://github.com/vansh3503/Mac-Mcp",
     "https://github.com/vansh3503/Mac-Mcp/blob/main/docs/tools.md",
+    "https://github.com/vansh3503/Mac-Mcp/blob/main/docs/install.md",
     "https://github.com/vansh3503/Mac-Mcp/blob/main/docs/security.md"
   ],
   "saferAlternatives": [
     "Keep every acting tool on review: they click, type, launch or quit apps, change system settings, run shell commands or AppleScript, and run JavaScript in browser tabs. Read-only tools, including browser_read, inherit.",
     "Use AXPilot's default standard profile, which leaves shell, AppleScript, Shortcuts, defaults and the browser tools disabled until you enable them in its config.",
-    "Keep AXPilot's own confirmations on (safety.confirm = \"destructive\", the default) so quitting apps, pressing dialog buttons and running scripts ask first.",
+    "Keep AXPilot's confirmations on (safety.confirm = \"destructive\", the default): force-quit, process kill, dialog buttons that destroy or discard, preference changes and every shell, AppleScript, shortcut or browser JavaScript run ask first.",
     "AXPilot never reads secure fields and keeps password managers and the Privacy & Security settings off limits; add other sensitive apps to safety.deny_apps.",
-    "AXPilot is pre-alpha and not on PyPI yet: install it from a reviewed source checkout and run axpilot connect, which points clients at the axpilot executable by path."
+    "AXPilot is pre-alpha and not on PyPI yet: install it from a reviewed source checkout as in its install guide, then run axpilot connect <client>, which points that client at the axpilot executable by path."
   ]
 }
