@@ -3,7 +3,7 @@
   "id": "mcp.axpilot",
   "version": "1.0.0",
   "name": "AXPilot",
-  "description": "Lets an agent see and operate macOS apps through the Accessibility API: snapshots, element search, OCR and screenshots, then clicks, typing, shortcuts, menus, apps and windows. Input, app, system, scripting and browser tools are reviewed. Off until you turn it on.",
+  "description": "Lets an agent see and operate macOS apps through the Accessibility API: snapshots, element search, OCR and screenshots, then clicks, typing, shortcuts, menus, apps and windows. Every tool that acts is reviewed; read-only tools inherit. Off until you turn it on.",
   "trustClass": "external",
   "activation": "opt-in",
   "publisher": {
@@ -73,7 +73,7 @@
     "https://github.com/vansh3503/Mac-Mcp/blob/main/docs/security.md"
   ],
   "saferAlternatives": [
-    "Keep input, app, system, scripting and browser tools on review: they click, type, press shortcuts, launch or quit apps, run shell commands or AppleScript, and run JavaScript in browser tabs.",
+    "Keep every acting tool on review: they click, type, launch or quit apps, change system settings, run shell commands or AppleScript, and run JavaScript in browser tabs. Read-only tools, including browser_read, inherit.",
     "Use AXPilot's default standard profile, which leaves shell, AppleScript, Shortcuts, defaults and the browser tools disabled until you enable them in its config.",
     "Keep AXPilot's own confirmations on (safety.confirm = \"destructive\", the default) so quitting apps, pressing dialog buttons and running scripts ask first.",
     "AXPilot never reads secure fields and keeps password managers and the Privacy & Security settings off limits; add other sensitive apps to safety.deny_apps.",
